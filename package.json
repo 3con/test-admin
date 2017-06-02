@@ -5,7 +5,9 @@
   "dependencies": {
     "admin-on-rest": "^1.0.1",
     "amazon-cognito-identity-js": "^1.16.0",
+    "amazon-cognito-js": "^1.1.0",
     "aws-sdk": "^2.49.0",
+    "node-uuid": "^1.4.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },

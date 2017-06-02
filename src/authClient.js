@@ -1,20 +1,5 @@
 import { AUTH_LOGIN, AUTH_LOGOUT, AUTH_ERROR, AUTH_CHECK } from 'admin-on-rest';
-import {Config, CognitoIdentityCredentials} from "aws-sdk";
-import {
-  CognitoUserPool,
-  CognitoUserAttribute
-} from "amazon-cognito-identity-js";
-import appConfig from "./config";
-
-Config.region = appConfig.region;
-Config.credentials = new CognitoIdentityCredentials({
-  IdentityPoolId: appConfig.IdentityPoolId
-});
-
-const userPool = new CognitoUserPool({
-  UserPoolId: appConfig.UserPoolId,
-  ClientId: appConfig.ClientId,
-});
+import {signInUser, forgotPassword, retrieveUserFromLocalStorage} from './auth/cognito'
 
 export default (type, params) => {
     // called when the user attempts to  log in
@@ -22,7 +7,8 @@ export default (type, params) => {
         const { username } = params;
         localStorage.setItem('username', username);
         // accept all username/password combinations
-        return Promise.resolve();
+        console.log(params);
+        return signInUser(params);
     }
     // called when the user clicks on the logout button
     if (type === AUTH_LOGOUT) {

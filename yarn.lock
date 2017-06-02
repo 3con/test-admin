@@ -98,6 +98,10 @@ amazon-cognito-identity-js@^1.16.0:
   dependencies:
     aws-sdk "^2.6.0"
 
+amazon-cognito-js@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/amazon-cognito-js/-/amazon-cognito-js-1.1.0.tgz#f1b4398ef1f46f104526f38b10dc11a09d833a6b"
+
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
@@ -3738,6 +3742,10 @@ node-pre-gyp@^0.6.29:
     semver "^5.3.0"
     tar "^2.2.1"
     tar-pack "^3.4.0"
+
+node-uuid@^1.4.8:
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/node-uuid/-/node-uuid-1.4.8.tgz#b040eb0923968afabf8d32fb1f17f1167fdab907"
 
 nopt@^4.0.1:
   version "4.0.1"
