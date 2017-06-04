@@ -12,6 +12,7 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "react-cognito": "^1.4.4",
     "react-scripts": "0.9.5"
   },
   "scripts": {
